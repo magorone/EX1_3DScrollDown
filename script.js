@@ -58,8 +58,7 @@ function files(index)
 		if (index < 10) 
 			{data += `./images/RunBack60FPS/RunBack0` + index + `.png\n`;}
 		else if (index < 100)
-			{data += `./images/RunBack60FPS/RunBack` + index + `.png\n`;}
-			
+			{data += `./images/RunBack60FPS/RunBack` + index + `.png\n`;}		
 	} 
 	// images/RunFromSide60FPS
 	for (let index = 0; index <= 42; index++) 
@@ -93,38 +92,39 @@ function files(index)
 		else if (index < 100)
 			{data += `./images/RunRight60FPS/RunRight` + index + `.png\n`;}
 	}
-	// images/RunTrinsitionBackToRight60FPS
+	// images/RunTransitionBackToRight60FPS
 	for (let index = 5; index <= 42; index++) 
 	{
 		if (index < 10) 
-			{data += `./images/RunTrinsitionBackToRight60FPS/RunTrinsitionBackToRight0` + index + `.png\n`;}
+			{data += `./images/RunTransitionBackToRight60FPS/RunTransitionBackToRight0` + index + `.png\n`;}
 		else if (index < 100)
-			{data += `./images/RunTrinsitionBackToRight60FPS/RunTrinsitionBackToRight` + index + `.png\n`;}
+			{data += `./images/RunTransitionBackToRight60FPS/RunTransitionBackToRight` + index + `.png\n`;}
 	}
-	// images/RunTrinsitionFrontToLeft60FPS
+	// images/RunTransitionFrontToLeft60FPS
 	for (let index = 5; index <= 42; index++) 
 	{
 		if (index < 10) 
-			{data += `./images/RunTrinsitionFrontToLeft60FPS/RunTrinsitionFrontToLeft0` + index + `.png\n`;}
+			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft0` + index + `.png\n`;}
 		else if (index < 100)
-			{data += `./images/RunTrinsitionFrontToLeft60FPS/RunTrinsitionFrontToLeft` + index + `.png\n`;}
+			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft` + index + `.png\n`;}
 	}
 	// images/RunTransitionLeftToBackLeftToBack0FPS
 	for (let index = 4; index <= 41; index++) 
 	{
 		if (index < 10) 
-			{data += `./images/RunTrinsitionLeftToBack60FPS/RunTrinsitionLeftToBack0` + index + `.png\n`;}
+			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack0` + index + `.png\n`;}
 		else if (index < 100)
-			{data += `./images/RunTrinsitionLeftToBack60FPS/RunTrinsitionLeftToBack` + index + `.png\n`;}
+			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack` + index + `.png\n`;}
 	}
 	// images/RunTransitionRightToFront60FPS
 	for (let index = 5; index <= 42; index++) 
 	{
 		if (index < 10) 
-			{data += `./images/RunTrinsitionRightToFront60FPS/RunTrinsitionRightToFront0` + index + `.png\n`;}
+			{data += `./images/RunTransitionRightToFront60FPS/RunTransitionRightToFront0` + index + `.png\n`;}
 		else if (index < 100)
-			{data += `./images/RunTrinsitionRightToFront60FPS/RunTrinsitionRightToFront` + index + `.png\n`;}
+			{data += `./images/RunTransitionRightToFront60FPS/RunTransitionRightToFront` + index + `.png\n`;}
 	}
+
 	return data.split("\n")[index];
 }
 
