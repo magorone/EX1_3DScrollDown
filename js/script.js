@@ -221,7 +221,7 @@ ScrollTrigger.create({
 	// markers:true,
 	scroller: `#main`,
 	start: `top top`,
-	end: `300% top`,
+	end: `600% top`,
 });
 
 gsap.to("#page1",{
