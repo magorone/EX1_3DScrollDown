@@ -158,81 +158,6 @@ function files(index)
 			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft` + index + `.png\n`;}
 	}
 
-
-/*	
-	// images/RunBack60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunBack60FPS/RunBack0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunBack60FPS/RunBack` + index + `.png\n`;}		
-	} 
-	// images/RunFromSide60FPS
-	for (let index = 0; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunFromSide60FPS/RunFromSide0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunFromSide60FPS/RunFromSide` + index + `.png\n`;}
-	}
-	// images/RunFront60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunFront60FPS/RunFront0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunFront60FPS/RunFront` + index + `.png\n`;}
-	}
-	// images/RunLeft60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunLeft60FPS/RunLeft0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunLeft60FPS/RunLeft` + index + `.png\n`;}
-	}
-	// images/RunRight60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunRight60FPS/RunRight0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunRight60FPS/RunRight` + index + `.png\n`;}
-	}
-	// images/RunTransitionBackToRight60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunTransitionBackToRight60FPS/RunTransitionBackToRight0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunTransitionBackToRight60FPS/RunTransitionBackToRight` + index + `.png\n`;}
-	}
-	// images/RunTransitionFrontToLeft60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft` + index + `.png\n`;}
-	}
-	// images/RunTransitionLeftToBackLeftToBack0FPS
-	for (let index = 4; index <= 41; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack` + index + `.png\n`;}
-	}
-	// images/RunTransitionRightToFront60FPS
-	for (let index = 5; index <= 42; index++) 
-	{
-		if (index < 10) 
-			{data += `./images/RunTransitionRightToFront60FPS/RunTransitionRightToFront0` + index + `.png\n`;}
-		else if (index < 100)
-			{data += `./images/RunTransitionRightToFront60FPS/RunTransitionRightToFront` + index + `.png\n`;}
-	}*/
-
 	return data.split("\n")[index];
 }
 
@@ -291,12 +216,12 @@ function scaleImage(img, ctx) {
 }
 
 ScrollTrigger.create({
-	trigger: "#page>canvas",
+	trigger: ".page>canvas",
 	pin: true,
 	// markers:true,
 	scroller: `#main`,
 	start: `top top`,
-	end: `600% top`,
+	end: `300% top`,
 });
 
 gsap.to("#page1",{
