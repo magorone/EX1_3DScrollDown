@@ -3,12 +3,12 @@ function locomotive()
 	gsap.registerPlugin(ScrollTrigger);
 
 	const locoScroll = new LocomotiveScroll({
-		el: document.querySelector("#main"),
+		el: document.querySelector(".main"),
 		smooth: true ,
 	});
 	locoScroll.on("scroll", ScrollTrigger.update);
 
-	ScrollTrigger.scrollerProxy("#main", 
+	ScrollTrigger.scrollerProxy(".main", 
 	{
 		scrollTop(value) {
 			return arguments.length
@@ -25,7 +25,7 @@ function locomotive()
 						};
 		},
 
-		pinType: document.querySelector("#main").style.transform
+		pinType: document.querySelector(".main").style.transform
 			? "transform"
 			: "fixed",
 	});
@@ -180,10 +180,10 @@ gsap.to(imageSeq, {
 		ease: `none`,
 		scrollTrigger: {
 		scrub: 0.15,
-		trigger: `#page>canvas`,
+		trigger: `.page>canvas`,
 		start: `top top`,
 		end: `600% top`,
-		scroller: `#main`,
+		scroller: `.main`,
 		},
 		onUpdate: render,
 });
@@ -219,37 +219,37 @@ ScrollTrigger.create({
 	trigger: ".page>canvas",
 	pin: true,
 	// markers:true,
-	scroller: `#main`,
+	scroller: `.main`,
 	start: `top top`,
 	end: `600% top`,
 });
 
-gsap.to("#page1",{
+gsap.to(".page1",{
 	scrollTrigger:{
-		trigger:`#page1`,
+		trigger:`.page1`,
 		start:`top top`,
 		end:`bottom top`,
 		pin:true,
-		scroller:`#main`
+		scroller:`.main`
 	}
 })
 
-gsap.to("#page2",{
+gsap.to(".page2",{
 	scrollTrigger:{
-		trigger:`#page2`,
+		trigger:`.page2`,
 		start:`top top`,
 		end:`bottom top`,
 		pin:true,
-		scroller:`#main`
+		scroller:`.main`
 	}
 })
 
-gsap.to("#page3",{
+gsap.to(".page3",{
 	scrollTrigger:{
-		trigger:`#page3`,
+		trigger:`.page3`,
 		start:`top top`,
 		end:`bottom top`,
 		pin:true,
-		scroller:`#main`
+		scroller:`.main`
 }
 })
