@@ -70,7 +70,7 @@ function files(index)
 			{data += `./images/RunLeft60FPS/RunLeft` + index + `.png\n`;}
 	}
 	// images/RunTransitionLeftToBackLeftToBack0FPS
-	for (let index = 4; index <= 41; index++) 
+	for (let index = 5 index <= 42; index++) 
 	{
 		if (index < 10) 
 			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack0` + index + `.png\n`;}
@@ -126,7 +126,7 @@ function files(index)
 			{data += `./images/RunTransitionFrontToLeft60FPS/RunTransitionFrontToLeft` + index + `.png\n`;}
 	}
 	// images/RunTransitionLeftToBackLeftToBack0FPS ***
-	for (let index = 4; index <= 41; index++) 
+	for (let index = 5; index <= 42; index++) 
 	{
 		if (index < 10) 
 			{data += `./images/RunTransitionLeftToBack60FPS/RunTransitionLeftToBack0` + index + `.png\n`;}
